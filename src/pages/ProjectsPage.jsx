@@ -31,7 +31,7 @@ const ProjectsPage = () => {
             key={i}
             className="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-teal-400/40 transition flex flex-col items-center"
           >
-            {/* Project Image */}
+            
             {p.image && (
               <img
                 src={p.image}
@@ -41,7 +41,7 @@ const ProjectsPage = () => {
             )}
             <h3 className="text-2xl font-bold mb-2 text-center">{p.title}</h3>
             <p className="text-gray-300 mb-4 text-center">{p.desc}</p>
-            {/* Deployed Link */}
+            
             {p.link && (
               <a
                 href={p.link}

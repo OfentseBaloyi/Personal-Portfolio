@@ -3,13 +3,22 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HomePage = () => {
   return (
-    <div className="h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-16">
-      {/* Text Section */}
-      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-        <h1 className="text-5xl font-bold mb-4">Hi, I'm Ofentse 👋</h1>
-        <p className="text-lg text-gray-500 max-w-md mb-8">
+    <div className="relative h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-16">
+
+      {/* Background Image with Blur & Dark Overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-sm"
+        style={{ backgroundImage: "url('/photo-1542831371-29b0f74f9713.jpg')" }}
+      ></div>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Content Section */}
+      <div className="relative md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+        <h1 className="text-5xl font-bold mb-4 text-white">Hi, I'm Ofentse Baloyi</h1>
+        <p className="text-lg text-gray-300 max-w-md mb-8">
           I'm a Frontend Developer passionate about building modern, responsive web applications.
         </p>
+
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
           <a
             href="/SOFTWARE DEV CV.pdf"
@@ -19,13 +28,12 @@ const HomePage = () => {
             Download CV
           </a>
 
-          {/* Social Links */}
           <div className="flex gap-4 mt-4 sm:mt-0">
             <a
               href="https://github.com/OfentseBaloyi"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 text-3xl transition-all duration-300 hover:text-teal-500 hover:shadow-[0_0_10px_#14b8a6] hover:scale-110"
+              className="text-white text-3xl transition-all duration-300 hover:text-teal-400 hover:scale-110"
             >
               <FaGithub />
             </a>
@@ -33,7 +41,7 @@ const HomePage = () => {
               href="https://www.linkedin.com/in/ofentse-baloyi01"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 text-3xl transition-all duration-300 hover:text-teal-500 hover:shadow-[0_0_10px_#14b8a6] hover:scale-110"
+              className="text-white text-3xl transition-all duration-300 hover:text-teal-400 hover:scale-110"
             >
               <FaLinkedin />
             </a>
@@ -41,12 +49,12 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Image Section */}
-      <div className="md:w-1/2 flex justify-center">
+      {/* Profile Image */}
+      <div className="relative md:w-1/2 flex justify-center">
         <img
           src="/me.jpg"
           alt="Ofentse"
-          className="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover shadow-lg border-4 border-teal-500"
+          className="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-teal-500"
         />
       </div>
     </div>
