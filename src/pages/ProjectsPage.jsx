@@ -1,23 +1,27 @@
 import React from "react";
+import automotive from "../assets/automotive.png";
+import clock from "../assets/clock.png";
+import calculator from "../assets/calculator.png";
+
 
 const ProjectsPage = () => {
   const projects = [
     {
       title: "Automotive Car Dealership Website",
       desc: "An automotive car dealer website built with bootstrap.",
-      image: "public/Screenshot 2025-10-24 234626.png", 
+      image: automotive,
       link: "https://automotive-cardealer.netlify.app/", 
     },
     {
       title: "CLOCK",
       desc: "A simple CLOCK made with HTML, CSS, and JavaScript.",
-      image: "public/Screenshot 2025-10-24 235920.png",
+      image: clock,
       link: "https://scriptjsclo.netlify.app/",
     },
     {
       title: "Calculator App",
       desc: "A Calculator App built with HTML, CSS, and JavaScript.",
-      image: "public/Screenshot 2025-10-24 234220.png",
+      image: calculator,
       link: "https://effervescent-choux-8f4909.netlify.app/",
     },
   ];
