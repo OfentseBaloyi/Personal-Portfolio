@@ -5,7 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import SkillsPage from "./pages/SkillsPage";
 import ContactPage from "./pages/ContactPage";
-import Footer from "./pages/FooterPage"; // <-- import the Footer
+import Footer from "./pages/FooterPage"; 
 import "./App.css";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         </section>
       </main>
 
-      <Footer /> {/* <-- Footer added here */}
+      <Footer />
     </div>
   );
 }
