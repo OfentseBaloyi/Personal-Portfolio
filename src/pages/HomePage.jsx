@@ -23,7 +23,7 @@ const HomePage = () => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
           <a
-            href="/SOFTWARE DEV CV.pdf"
+            href="/OFENTSE BALOYI CV (2).pdf"
             download
             className="bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 hover:brightness-125"
           >
