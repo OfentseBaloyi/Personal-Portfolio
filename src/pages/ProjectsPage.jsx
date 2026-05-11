@@ -1,5 +1,5 @@
 import React from "react";
-import automotive from "../assets/automotive.png";
+import automotive from "../assets/mmm.png";
 import clock from "../assets/clock.png";
 import calculator from "../assets/calculator.png";
 
@@ -7,10 +7,10 @@ import calculator from "../assets/calculator.png";
 const ProjectsPage = () => {
   const projects = [
     {
-      title: "Automotive Car Dealership Website",
-      desc: "An automotive car dealer website built with bootstrap.",
+      title: "Malebo's Traditional Food Website",
+      desc: "A traditional food restaurant website built with Bootstrap, showcasing authentic meals, catering services, and customer-friendly online access..",
       image: automotive,
-      link: "https://automotive-cardealer.netlify.app/", 
+      link: "https://malebostraditonalfood.netlify.app/", 
     },
     {
       title: "CLOCK",
